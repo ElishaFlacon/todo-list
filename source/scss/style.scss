@@ -150,12 +150,14 @@ form {
         padding: 10px;
         font-size: 36px;
         background-color: #f0f8ff;
+        border-radius: 10px 0px 0px 10px;
     }
 
     &__button {
         color: #6fadff;
         background: #f0f8ff;
         transition: all 0.3s ease;
+        border-radius: 0px 10px 10px 0px;
     }
 
     &__button:hover {
