@@ -10,7 +10,8 @@
 
 /* Подключение шрифтов */
 
-/* @import url('шрифт'); */
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /*************************/
 
@@ -73,6 +74,7 @@ input::-ms-clear {
 
 button {
     cursor: pointer;
+    background: none;
 }
 
 button::-moz-focus-inner {
@@ -113,9 +115,57 @@ h6 {
 
 /* Основной код */
 
+html {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    background-image: linear-gradient(140deg, #6fadff, #b7d6ff, );
+    color: #f0f8ff;
+    min-height: 100vh;
+}
+
+.app {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1100px;
+    padding: 15px;
+}
+
+header {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-form {
+
+    &__input,
+    &__button {
+        padding: 10px;
+        font-size: 36px;
+        background-color: #f0f8ff;
+    }
+
+    &__button {
+        color: #6fadff;
+        background: #f0f8ff;
+        transition: all 0.3s ease;
+    }
+
+    &__button:hover {
+        color: #f0f8ff;
+        background: #6fadff;
+    }
+}
 
 
-
+.todo-list {}
 
 /*************************/
 

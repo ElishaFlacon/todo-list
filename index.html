@@ -16,16 +16,35 @@
     <title>Todo List</title>
     <!-- Иконка сайта -->
     <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Подключаем css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Подключаем JS -->
-    <script src="js/script.js"></script>
 </head>
 
 <body>
     <div class="app">
 
+        <header>
+            <h1>Your Todo List</h1>
+        </header>
+        <form class="todo-form">
+            <input type="text" class="todo-form__input">
+            <button class="todo-form__button" type="submit">
+                <i class="fa-regular fa-square-plus"></i>
+            </button>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+
+            </ul>
+        </div>
+
     </div>
+
+    <!-- Подключаем JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
