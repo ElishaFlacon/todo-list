@@ -14,6 +14,7 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -97,11 +98,34 @@ h6 {
 /*************************/
 /* Основной код */
 html {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
-  background-image: linear-gradient(140deg, #6fadff, #b7d6ff);
   color: #f0f8ff;
   min-height: 100vh;
+}
+
+body {
+  background: #6fadff;
+  /* Old browsers */
+  background: -moz-linear-gradient(-70deg, #6fadff, #b7d6ff);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6fadff), color-stop(100%, #b7d6ff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-70deg, #6fadff 0%, #b7d6ff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-70deg, #6fadff 0%, #b7d6ff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-70deg, #6fadff 0%, #b7d6ff 100%);
+  /* IE10+ */
+  background: linear-gradient(-70deg, #6fadff 0%, #b7d6ff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b7d6ff", endColorstr="#6fadff", GradientType=0);
+  /* IE6-9 */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-position: 0px 0px;
 }
 
 .app {
@@ -119,15 +143,9 @@ header {
 header,
 form {
   min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-form__input, .todo-form__button {
@@ -136,18 +154,64 @@ form {
   background-color: #f0f8ff;
   border-radius: 10px 0px 0px 10px;
 }
-
 .todo-form__button {
   color: #6fadff;
   background: #f0f8ff;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 0px 10px 10px 0px;
 }
-
 .todo-form__button:hover {
   color: #f0f8ff;
   background: #6fadff;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+}
+
+.todo__item {
+  padding: 0px 8px;
+}
+
+.todo {
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  font-size: 32px;
+}
+.todo li {
+  flex: 1;
+  text-align: start;
+}
+.todo button {
+  font-size: 32px;
+}
+.todo__delete-btn, .todo__complete-btn {
+  background: #6fadff;
+  color: #f0f8ff;
+  padding: 1rem;
+}
+.todo__delete-btn {
+  border-radius: 0px 10px 10px 0px;
+  background: #ff6363;
+}
+.todo__complete-btn {
+  background: #7dff63;
+}
+
+.fa-regular {
+  pointer-events: none;
 }
 
 /*************************/
