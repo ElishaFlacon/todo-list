@@ -37,8 +37,18 @@ function addTodo(event) {
 
 function deleteCheck(event) {
     const item = event.target;
+    // Удаление
     if (item.classList[0] === 'todo__delete-btn') {
         const todo = item.parentElement;
-        todo.remove();
+        todo.classList.add('fall');
+        todo.addEventListener('transitioned', function () {
+            todo.remove();
+        });
+    };
+    // Выполненно
+    if (item.classList[0] === 'todo__complete-btn') {
+        const todo = item.parentElement;
+        todo.classList.toggle('completed');
     };
 }
+

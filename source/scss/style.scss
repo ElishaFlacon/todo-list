@@ -216,6 +216,7 @@ form {
     background: #f0f8ff;
     border-radius: 10px;
     font-size: 32px;
+    transition: all 0.5s ease;
 
     li {
         flex: 1;
@@ -247,7 +248,15 @@ form {
     pointer-events: none;
 }
 
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
 
+.fall {
+    transform: translateY(6rem) rotateZ(15deg);
+    opacity: 0;
+}
 
 /*************************/
 
