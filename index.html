@@ -30,7 +30,8 @@
             <h1>Todo List</h1>
         </header>
         <form class="todo-form">
-            <input type="text" class="todo-form__input">
+            <input type="text" class="todo-form__input" placeholder="No more 30 symbols" onKeyDown="limitText(this,31);"
+                onKeyUp="limitText(this,31);">
             <button class="todo-form__button" type="submit">
                 <i class="fa-regular fa-square-plus"></i>
             </button>

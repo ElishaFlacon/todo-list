@@ -184,6 +184,8 @@ form {
 
 .todo__item {
   padding: 0px 8px;
+  word-break: break-all;
+  max-width: 500px;
 }
 
 .todo {
@@ -268,4 +270,92 @@ select {
 
 /*************************/
 /* Адаптив (ВСЕГДА В КОНЦЕ) */
+@media screen and (max-width: 700px) {
+  .todo-form__input {
+    width: 200px;
+    font-size: 24px;
+  }
+  .todo-form__button {
+    padding: 10px;
+    font-size: 24px;
+  }
+  .filter-todo {
+    width: 100px;
+  }
+  select {
+    min-width: 100px;
+    padding: 18px;
+    font-size: 24px;
+  }
+  .select::after {
+    top: 14px;
+    right: 4px;
+    padding: 10px;
+  }
+  .select {
+    min-width: 0px;
+  }
+  .todo {
+    padding: 0px 0px;
+    min-width: 0px;
+    width: 350px;
+    font-size: 20px;
+  }
+  .todo__delete-btn,
+.todo__complete-btn {
+    padding: 12px;
+  }
+  .todo button {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .todo-form__input {
+    width: 140px;
+    font-size: 16px;
+  }
+  .todo-form__button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .filter-todo {
+    max-width: 50px;
+  }
+  select {
+    min-width: 80px;
+    padding: 13px;
+    font-size: 16px;
+  }
+  .select::after {
+    top: 8px;
+    right: 4px;
+    padding: 6px;
+  }
+  .select {
+    min-width: 80px;
+  }
+  .todo {
+    padding: 0px 0px;
+    min-width: 0px;
+    width: 240px;
+    font-size: 18px;
+  }
+  .todo__delete-btn,
+.todo__complete-btn {
+    padding: 10px;
+  }
+  .todo button {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .todo-form__input {
+    width: 100px;
+    font-size: 16px;
+  }
+  .todo-form__button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 /*************************/
