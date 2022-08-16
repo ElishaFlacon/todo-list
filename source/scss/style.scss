@@ -280,17 +280,17 @@ select {
     color: #6fadff;
     min-width: 200px;
     cursor: pointer;
-    padding: 26px;
-    font-size: 18px;
+    padding: 23px;
+    font-size: 24px;
 }
 
 .select::after {
     content: "\25BC";
     position: absolute;
     background: #6fadff;
-    top: 16px;
+    top: 14px;
     right: 8px;
-    padding: 12px;
+    padding: 16px;
     pointer-events: none;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -330,11 +330,11 @@ select {
     select {
         min-width: 100px;
         padding: 18px;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .select::after {
-        top: 14px;
+        top: 11px;
         right: 4px;
         padding: 10px;
     }
