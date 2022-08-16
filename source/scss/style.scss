@@ -109,6 +109,13 @@ h6 {
     font-weight: inherit;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+}
+
 /*************************/
 
 
@@ -217,6 +224,7 @@ form {
     border-radius: 10px;
     font-size: 32px;
     transition: all 0.5s ease;
+    min-width: 600px;
 
     li {
         flex: 1;
@@ -231,7 +239,7 @@ form {
     &__complete-btn {
         background: #6fadff;
         color: #f0f8ff;
-        padding: 1rem;
+        padding: 16px;
     }
 
     &__delete-btn {
@@ -254,8 +262,42 @@ form {
 }
 
 .fall {
-    transform: translateY(6rem) rotateZ(15deg);
+    transform: translateY(100px) rotateZ(15deg);
     opacity: 0;
+}
+
+.select {
+    margin: 16px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+select {
+    color: #6fadff;
+    min-width: 200px;
+    cursor: pointer;
+    padding: 26px;
+    font-size: 18px;
+
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #6fadff;
+    top: 16px;
+    right: 8px;
+    padding: 12px;
+    pointer-events: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: #ffffff;
+    color: #6fadff;
 }
 
 /*************************/

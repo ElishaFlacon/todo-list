@@ -15,7 +15,7 @@
     <!-- Название сайта -->
     <title>Todo List</title>
     <!-- Иконка сайта -->
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,18 +27,23 @@
     <div class="app">
 
         <header>
-            <h1>Your Todo List</h1>
+            <h1>Your Todo Lisst</h1>
         </header>
         <form class="todo-form">
             <input type="text" class="todo-form__input">
             <button class="todo-form__button" type="submit">
                 <i class="fa-regular fa-square-plus"></i>
             </button>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
         </form>
         <div class="todo-container">
-            <ul class="todo-list">
-
-            </ul>
+            <ul class="todo-list"></ul>
         </div>
 
     </div>
