@@ -15,11 +15,10 @@
   🛠️ Инструменты, которые использовались при разработке приложения:
 </h2>
 
-- html
-- css
-- js
-- sass
-- bem
+- JavaScript
+- HTML CSS
+- SCSS
+- BEM
 
 
 
@@ -31,9 +30,9 @@
   🚀 Зпуск приложения:
 </h2>
 
-- git clone https://github.com/ElishaFlacon/todo-list-native-js.git
-- cd todo-list-native-js
-- start index.html
+- `git clone https://github.com/ElishaFlacon/todo-list-native-js.git`
+- `cd todo-list-native-js`
+- `start index.html`
 <h3>
     Запускаем, не работет, ура! 🗿🚬
 </h3>
